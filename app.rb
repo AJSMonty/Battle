@@ -10,7 +10,7 @@ get '/secret' do
 end
 
 get '/cat' do
-    "<div>
-    <img src='https://ichef.bbci.co.uk/news/1024/cpsprodpb/151AB/production/_111434468_gettyimages-1143489763.jpg' style='border: 3px dashed red'>
-    </div>"
+    @generator = ["Amigo", "Oscar", "Viking"].sample
+    erb(:index)
+
 end
